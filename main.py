@@ -2,7 +2,6 @@
 # See README .txt file at following directory for implementation or editing:
     # sites/RFIDLabALECTeam105/Shared Documents/General/WMSupplierValidation/.Info
 # Last updated on 7/20/2023 by Rayce Giles.
-# Note that Python is not my strongsuit.
 
 
 # Testing Fields
@@ -47,11 +46,11 @@ class AlecEnumerator():
         # Defines the vendors, departments, etc. using variables for easy access around script.
         # Main variables to change when expanding. See .Info implementation documentation.
     def config(__self__):
-        __self__.vendors = ('Submission Updates', 'Walmart US', 'Sams Club', 'Walmart Canada', 'Nordstrom', 'Dicks Sporting Goods')
+        __self__.vendors = ('Submission Updates', 'W', 'S', 'WC', 'N', 'D')
         __self__.vendorsExtra = {'09' : 'General'}
-        __self__.departments = {'Walmart US' : ('Empty', 'Apparel', 'Home', 'Electronics', 'Toys', 'Sporting Goods', 'Battery',
-                                       'Tires', 'Entertainment', 'Hardline')}
-        __self__.departmentsExtra = {'Walmart US' : {'46' : 'Example'}}
+        __self__.departments = {'W' : ('Empty', 'A', 'H', 'E', 'T', 'S', 'B',
+                                       'Ti', 'Ent', 'Ha')}
+        __self__.departmentsExtra = {'W' : {'46' : 'Example'}}
 
         __self__.vendorCut = [15,17]
         __self__.departmentCut = [17,19]
